@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>string example</h1>
+    <p id="demo"></p>
+    <script>
+      let text1 = "Apple, Banana, Kiwi";
+      let part = text1.slice(7);
+      let part2 = text1.slice(-12, -6);
+      console.log("part:", part);
+      console.log("Negative position part2:", part2);
+      // substring and slice are similar--
+      // just that if you pass start to end less than 0
+      //i.e negative number it will consider it as 0
+      let partsubstring = text1.substring(7, 13);
+      let partsubstringNegative = text1.substring(-12,-6);
+      console.log(
+        "extracted banana from text1 via substring method::",
+        partsubstring
+      );
+      console.log(
+        "extracted banana from text1 via substring method Negative parameter::",
+        partsubstringNegative 
+      );
+      // in console we can see that it consider 0, in aur string values(-12,-6)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string methods</title>
+  </head>
+  <body>
+    <h1>string example</h1>
+    <p id="demo"></p>
+    <script>
+      const text = "ABCDEF";
+      console.log("length of string is::", text.length);
+      // requirement- extract cd from above text
+      // slice(start position,end position)  --- end position not included
+      // it returns new string
+      const extractedText = text.slice(2, 4);
+      console.log("extractedText is::", extractedText);
+      // requirement- extract banana from above text
+      // slice(start position,end position) --- end position not included
+      // it return new string
+      let text1 = "Apple, Banana, Kiwi";
+      let part = text1.slice(7, 13);
+      console.log("part:", part);
+    </script>
+  </body>
+</html>
